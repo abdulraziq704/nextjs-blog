@@ -20,7 +20,7 @@ const Page = ({ params }) => {
         });
         setData(response.data);
 
-        // Fetch related blogs based on the current blog's category
+         
         const relatedResponse = await axios.get("/api/reatedblogs", {
           params: {
             category: response.data.blogging.category,
@@ -67,7 +67,7 @@ const Page = ({ params }) => {
               className="md:w-[50%] w-[80%] border-4 absolute -bottom-12 md:-bottom-72 border-white pb-2"
               src={data.blogging.image}
               alt={data.blogging.title}
-              width={800} // Set width and height for optimization
+              width={800}  
               height={500}
             />
           </div>
@@ -83,8 +83,7 @@ const Page = ({ params }) => {
                 startups to grow sustainably.
               </p>
 
-              {/* Section: Automate Routine Tasks */}
-              <div className="my-12">
+               <div className="my-12">
                 <h2 className="text-2xl font-semibold mb-4">
                   Automate Routine Tasks
                 </h2>
@@ -97,7 +96,7 @@ const Page = ({ params }) => {
                   <li>
                     <strong>AI-Powered Customer Support:</strong> Implement AI
                     chatbots to manage customer inquiries efficiently, freeing
-                    up your team's time.
+                    up your team time.
                   </li>
                   <li>
                     <strong>Schedule and Manage Projects:</strong> Use project
@@ -107,8 +106,7 @@ const Page = ({ params }) => {
                 </ul>
               </div>
 
-              {/* Section: Implement Lean Operations */}
-               
+                
 
               {/* Section: Optimize Marketing Spend */}
               <div className="mb-12">

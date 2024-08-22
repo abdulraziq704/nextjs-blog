@@ -53,7 +53,7 @@ const Page = ({ params }) => {
                 className="border-[1.5px] border-black shadow-custom-shadow md:py-2 md:px-5 px-3 py-1 flex gap-2 justify-between items-center"
               >
                 Write with us
-                <img className="w-3" src={assets.arrow} alt="" />
+                <Image className="w-3" src={assets.arrow} alt="" />
               </Link>
             </div>
           </div>

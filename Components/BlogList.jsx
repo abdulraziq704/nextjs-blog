@@ -82,7 +82,8 @@ useEffect(() => {
                 className="max-w-[320px]  border-black   border-[1.4px] hover:shadow-custom-shadow bg-white"
               >
                 <Link href={`/blogs/${data._id}`}>
-                  <img className="w-full mb-4" src={data.image} alt=""   />
+                  <Image className="w-full mb-4" src={data.image} alt=""   width={800} // Set width and height for optimization
+              height={500}   />
                 </Link>
                 <div className="p-4">
                   <p className="bg-black text-white px-3 py-1 text-sm inline-flex">
